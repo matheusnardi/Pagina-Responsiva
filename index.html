@@ -1,0 +1,133 @@
+<!-- Matheus Nardi, Gabriel Venezian, João Castro, Miran e Rubens -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 2.5em;
+        }
+        h2{
+            font-size: 2.0em;
+        }
+        h3{
+            font-size: 1.6em;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 62.5%;
+        }
+        header{
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        nav.menu{
+            float: left;
+            width: 20%;
+            overflow: auto;
+            margin-top: 20px;
+        }
+        nav.menu ul{
+            list-style:none;
+            padding: 0px;
+            margin: 0px;
+        }
+        nav.menu ul li{
+            padding: 8px;
+            font-size: 1.2em;
+            border-bottom: 1px lightgrey solid;
+        }
+        section.main{
+            float: left;
+            width: 60%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        section.main img{
+            width: 100%;
+        }
+        aside.right{
+            background-color: lightskyblue;
+            float: left;
+            width: 20%;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        footer{
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.0em;
+            display: inline-block;
+            width: 100%;
+            margin-top: 10px;
+        }
+        @media only screen and (max-width:800px){
+            section.main{
+                width: 80%;
+            }
+            nav.menu{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width:600px){
+            section.main{
+                width: 100%;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            nav.menu{
+                width: 100%;
+                text-align: center;
+            }
+            aside.right{
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Responsividade</title>
+</head>
+<body>
+    <header>
+        <h1>Exercicio de site responsivo</h1>
+        <h3>Redimensione a pagina em seu navegador e use um celular para testar</h3>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li>Paisagem</li>
+            <li>Como chegar lá</li>
+            <li>Historia</li>
+            <li>Galeria de fotos</li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <h2>Paisagem</h2>
+        <p>A paisagem em questão é a caverna da Luz, localizada na Grécia e só se chega lá acompanhado de um guia turístico</p>
+        <img src="img/imagem1.PNG" alt="">
+    </section>
+
+    <aside class="right">
+        <h2>O que?</h2>
+        <p>A caverna da luz é um dos pontos turisticos mais visitados na Grécia.</p>
+        <h2>Onde?</h2>
+        <p>A Caverna da Luz fica localizada entre a praia de Apollo e a vila de Atenas.</p>
+        <h2>Custo?</h2>
+        <p>A visita a Caverna da Luz é gratuita</p>
+    </aside>
+
+    <footer>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis deserunt corrupti esse placeat optio porro error nesciunt modi blanditiis ullam libero quidem, magnam eius enim animi quasi vitae quod aliquid!</p>
+    </footer>
+</body>
+</html>
